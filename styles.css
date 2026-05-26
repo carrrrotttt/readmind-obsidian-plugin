@@ -1,0 +1,664 @@
+.readmind-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 12px;
+}
+
+.readmind-source-status {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.readmind-toolbar-actions,
+.readmind-toolbar-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  max-width: 100%;
+}
+
+.readmind-toolbar-actions .setting-item,
+.readmind-toolbar-filters .setting-item,
+.readmind-relation-tabs .setting-item,
+.readmind-relation-filters .setting-item,
+.readmind-network-filters .setting-item,
+.readmind-journey-header .setting-item,
+.readmind-journey-actions .setting-item,
+.readmind-journey-review-actions .setting-item,
+.readmind-journey-book-actions .setting-item,
+.readmind-card-actions .setting-item,
+.readmind-card-selection-actions .setting-item,
+.readmind-network-actions .setting-item,
+.readmind-book-card-actions .setting-item,
+.readmind-suggestion-actions .setting-item,
+.readmind-confirmed-relation-actions .setting-item {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.readmind-icon-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.readmind-icon-toolbar .setting-item-control {
+  display: flex;
+}
+
+.readmind-icon-toolbar .setting-item {
+  margin: 0;
+}
+
+.readmind-icon-button,
+.readmind-icon-text-button {
+  min-width: 32px;
+  min-height: 32px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.readmind-icon-text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.readmind-icon-button:focus-visible,
+.readmind-icon-text-button:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+.readmind-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.readmind-book {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--background-primary);
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.readmind-bookshelf-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.readmind-book-card-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 54px;
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.readmind-book-card-info {
+  min-width: 0;
+}
+
+.readmind-book-card-cover {
+  width: 54px;
+  justify-self: end;
+}
+
+.readmind-book-card-actions {
+  margin-top: auto;
+  padding: 4px 6px;
+  background: var(--background-secondary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.readmind-book-card-actions .setting-item-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  width: 100%;
+}
+
+.readmind-book-card-actions .setting-item {
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.readmind-book.is-selected {
+  border-color: var(--interactive-accent);
+}
+
+.readmind-book-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+.readmind-cover {
+  width: 54px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.readmind-cover-placeholder {
+  width: 54px;
+  height: 76px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+.readmind-muted {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.readmind-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.readmind-relation-tabs,
+.readmind-relation-filters,
+.readmind-network-filters,
+.readmind-card-actions,
+.readmind-card-selection-actions,
+.readmind-network-actions,
+.readmind-suggestion-actions,
+.readmind-confirmed-relation-actions {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.readmind-card-actions {
+  width: 100%;
+}
+
+.readmind-relation-tabs .setting-item-control,
+.readmind-relation-filters .setting-item-control,
+.readmind-network-filters .setting-item-control,
+.readmind-card-actions .setting-item-control,
+.readmind-card-selection-actions .setting-item-control,
+.readmind-network-actions .setting-item-control,
+.readmind-suggestion-actions .setting-item-control,
+.readmind-confirmed-relation-actions .setting-item-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+  max-width: 100%;
+}
+
+.readmind-network-actions .setting-item-control {
+  justify-content: flex-end;
+}
+
+.readmind-network-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.readmind-canvas-toolbar {
+  flex: 0 0 auto;
+}
+
+.readmind-reading-journey-view {
+  max-width: 1080px;
+}
+
+.readmind-journey-header,
+.readmind-journey-periods,
+.readmind-journey-actions,
+.readmind-journey-review-actions,
+.readmind-journey-book-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.readmind-journey-header {
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.readmind-period-button {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.readmind-period-button.is-active {
+  border-color: var(--interactive-accent);
+  color: var(--text-accent);
+}
+
+.readmind-journey-overview,
+.readmind-journey-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 10px 0 18px;
+}
+
+.readmind-journey-metric,
+.readmind-journey-book {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  padding: 12px;
+}
+
+.readmind-journey-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.readmind-journey-metric strong {
+  font-size: var(--font-ui-large);
+}
+
+.readmind-journey-trend {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  min-height: 150px;
+  overflow-x: auto;
+  padding: 8px 0 18px;
+}
+
+.readmind-journey-trend-bar {
+  position: relative;
+  min-width: 22px;
+  border-radius: 5px 5px 0 0;
+  background: var(--interactive-accent);
+}
+
+.readmind-journey-trend-bar span {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  white-space: nowrap;
+}
+
+.readmind-journey-top-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.readmind-journey-book {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.readmind-journey-book-cover {
+  width: 56px;
+  height: 78px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.readmind-journey-book-info {
+  min-width: 0;
+}
+
+.readmind-journey-book-info p {
+  margin: 4px 0;
+}
+
+.readmind-journey-book-actions {
+  grid-column: 1 / -1;
+  justify-content: flex-end;
+}
+
+.readmind-journey-review-actions {
+  justify-content: flex-start;
+  margin: 4px 0 18px;
+}
+
+.readmind-journey-preference-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.readmind-journey-preference-row {
+  display: grid;
+  grid-template-columns: minmax(80px, 160px) minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.readmind-journey-preference-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--background-secondary);
+  overflow: hidden;
+}
+
+.readmind-journey-preference-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--interactive-accent);
+}
+
+.readmind-journey-time-strip {
+  display: flex;
+  align-items: end;
+  gap: 3px;
+  height: 66px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.readmind-journey-time-slot {
+  width: 12px;
+  min-width: 12px;
+  border-radius: 3px 3px 0 0;
+  background: var(--interactive-accent);
+}
+
+@media (max-width: 520px) {
+  .readmind-journey-book {
+    grid-template-columns: 44px minmax(0, 1fr);
+  }
+
+  .readmind-journey-book-cover {
+    width: 44px;
+    height: 62px;
+  }
+
+  .readmind-journey-preference-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.readmind-canvas-shell {
+  flex: 1 1 auto;
+  min-height: 520px;
+  display: block;
+  overflow: hidden;
+}
+
+.readmind-canvas {
+  position: relative;
+  min-width: 0;
+  min-height: 480px;
+  overflow: hidden;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+}
+
+.readmind-canvas-stage {
+  position: absolute;
+  inset: 0;
+  transform-origin: 0 0;
+  cursor: grab;
+}
+
+.readmind-canvas-edges,
+.readmind-canvas-nodes {
+  position: absolute;
+  inset: 0;
+}
+
+.readmind-canvas-edges {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.readmind-canvas-nodes {
+  z-index: 2;
+}
+
+.readmind-canvas-edge {
+  position: absolute;
+  height: 2px;
+  background: var(--text-muted);
+  transform-origin: 0 50%;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.readmind-canvas-edge.is-selected {
+  height: 4px;
+  background: var(--interactive-accent);
+}
+
+.readmind-canvas-edge-label {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  white-space: nowrap;
+}
+
+.readmind-canvas-card {
+  position: absolute;
+  width: 220px;
+  min-height: 132px;
+  max-height: 156px;
+  padding: 12px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  box-shadow: var(--shadow-s);
+  cursor: grab;
+  overflow: hidden;
+}
+
+.readmind-canvas-card.is-selected {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 35%, transparent);
+}
+
+.readmind-canvas-card h3 {
+  margin: 0 0 8px;
+  font-size: var(--font-ui-medium);
+}
+
+.readmind-canvas-card-summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 8px;
+  color: var(--text-muted);
+}
+
+.readmind-canvas-detail {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 4;
+  width: min(340px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  min-width: 0;
+  overflow: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  padding: 12px;
+  overflow-wrap: anywhere;
+  box-shadow: var(--shadow-l);
+}
+
+.readmind-canvas-detail-close {
+  float: right;
+  margin-left: 8px;
+}
+
+.readmind-network-empty-inline {
+  flex: 0 0 auto;
+}
+
+.readmind-card-actions .setting-item-control {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.readmind-suggestion-actions,
+.readmind-confirmed-relation-actions {
+  margin-top: 10px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.readmind-suggestion-actions .setting-item-control,
+.readmind-confirmed-relation-actions .setting-item-control {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.readmind-relation-card h3,
+.readmind-relation-card p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.readmind-relation-card button,
+.readmind-toolbar-actions button {
+  max-width: 100%;
+  white-space: normal;
+}
+
+@media (max-width: 520px) {
+  .readmind-books {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .readmind-toolbar-actions,
+  .readmind-relation-tabs .setting-item-control,
+  .readmind-relation-filters .setting-item-control,
+  .readmind-network-filters .setting-item-control,
+  .readmind-card-actions .setting-item-control,
+  .readmind-card-selection-actions .setting-item-control,
+  .readmind-network-actions .setting-item-control,
+  .readmind-suggestion-actions .setting-item-control,
+  .readmind-confirmed-relation-actions .setting-item-control {
+    align-items: stretch;
+  }
+
+  .readmind-canvas-shell {
+    min-height: 0;
+  }
+
+  .readmind-canvas {
+    min-height: 430px;
+  }
+
+  .readmind-canvas-detail {
+    left: 8px;
+    right: 8px;
+    top: auto;
+    bottom: 8px;
+    width: auto;
+    max-height: 55%;
+  }
+
+  .readmind-network-actions .setting-item-control button {
+    flex: 1 1 100%;
+  }
+
+  .readmind-book-card-body {
+    grid-template-columns: minmax(0, 1fr) 48px;
+    gap: 8px;
+  }
+
+  .readmind-book-card-cover,
+  .readmind-cover,
+  .readmind-cover-placeholder {
+    width: 48px;
+  }
+
+  .readmind-cover,
+  .readmind-cover-placeholder {
+    height: 68px;
+  }
+
+  .readmind-card-actions .setting-item-control {
+    justify-content: flex-end;
+  }
+
+  .readmind-suggestion-actions .setting-item-control button,
+  .readmind-confirmed-relation-actions .setting-item-control button {
+    flex: 1 1 calc(50% - 6px);
+  }
+}
+
+.readmind-detail-tabs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+.readmind-detail-tab {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px 10px 8px;
+  font-size: var(--font-ui-medium);
+  line-height: 1.3;
+}
+
+.readmind-detail-tab.is-active {
+  border-bottom-color: var(--interactive-accent);
+  color: var(--text-normal);
+  font-weight: 600;
+}
+
+.readmind-annotation {
+  border-left: 3px solid var(--background-modifier-border);
+  padding-left: 10px;
+  margin: 10px 0;
+}

@@ -1,0 +1,11 @@
+{
+  "id": "readmind-ai-enhanced-readingnotes",
+  "name": "ReadMind",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "AI-enhanced reading notes workflow for Obsidian.",
+  "author": "",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": true
+}

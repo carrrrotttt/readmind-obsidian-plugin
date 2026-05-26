@@ -1,0 +1,57 @@
+node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+*.local.*
+deploy-test.local.json
+data.json
+secrets.*
+*.key
+*.pem
+*.p12
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches and temp files
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.tmp/
+.temp/
+tmp/
+temp/
+*.tsbuildinfo
+
+# Build outputs
+main.js
+main.js.map
+dist/
+build/
+coverage/
+
+# Obsidian vault and local note data
+.obsidian/
+.trash/
+ReadMind/
+attachments/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local-only test/import data
+test-data/
+fixtures-local/
+*.fixture.local.json
+*.import.local.json

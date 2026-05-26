@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "schemaVersion": 1,
+    "dataSourceMode": "fixture",
+    "rootDir": "ReadMind",
+    "sourcesDir": "ReadMind/01 Sources/Books",
+    "aiDir": "ReadMind/02 AI Analysis/Books",
+    "cardsDir": "ReadMind/03 Knowledge Cards",
+    "suggestionsDir": "ReadMind/04 Link Suggestions",
+    "wereadConnection": {
+      "state": "disconnected",
+      "message": "PLACEHOLDER_CONNECTION_MESSAGE",
+      "experimental": true
+    },
+    "wereadSession": {
+      "cookie": "PLACEHOLDER_WEREAD_COOKIE",
+      "userVid": "PLACEHOLDER_USER_VID",
+      "expired": true,
+      "lastVerifiedAt": "PLACEHOLDER_ISO_DATETIME"
+    },
+    "ai": {
+      "enabled": false,
+      "providerType": "openai-compatible",
+      "baseUrl": "PLACEHOLDER_BASE_URL",
+      "apiKey": "PLACEHOLDER_API_KEY",
+      "model": "PLACEHOLDER_MODEL_NAME",
+      "temperature": 0.2,
+      "maxInputChars": 12000,
+      "includeUserThoughts": true,
+      "includeMetadata": true
+    },
+    "firstAnalysisConfirmed": false
+  },
+  "syncIndex": {},
+  "analysisIndex": {},
+  "cardIndex": {},
+  "linkSuggestions": {},
+  "selectedBookIds": [],
+  "syncLogs": [],
+  "dailyEvents": []
+}

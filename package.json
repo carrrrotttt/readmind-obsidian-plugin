@@ -1,0 +1,28 @@
+{
+  "name": "readmind-ai-enhanced-readingnotes",
+  "version": "0.1.0",
+  "description": "ReadMind / 书脉 Obsidian plugin development preview",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "deploy:test": "npm run build && node scripts/deploy-test.mjs",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "obsidian",
+    "readmind",
+    "reading-notes"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "builtin-modules": "^5.0.0",
+    "esbuild": "^0.27.0",
+    "obsidian": "^1.8.7",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
